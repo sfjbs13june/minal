@@ -1,13 +1,13 @@
-## Build application
+## Create the Springboot project using :
 https://start.spring.io/
 
-## Run application
+## Build the project using command :
 
 ...
 mvn clean install
 ...
 
-## Test application
+## Run the application using command :
 
 ...
 mvn spring-boot:run
