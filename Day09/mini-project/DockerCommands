@@ -1,0 +1,26 @@
+Running command:
+docker ps
+
+For connecting to docker hub:
+docker login
+
+For images:
+docker images
+
+Remove image:
+docker rm 9c04b05cae18
+
+docker stop <imageID>
+
+For docker pull:
+docker pull <Repository>:<tag>
+docker push minalhatekar04/student-app:0.0.1-SNAPSHOT
+
+docker run <Repository>:<tag>
+docker run -p 8080:8080 minalhatekar04/student-app:0.0.1-SNAPSHOT
+
+docker exec -ti <container-id> /bin/sh
+
+For docker push:
+docker pull <Repository>:<tag>
+docker pull minalhatekar04/student-app:0.0.1-SNAPSHOT
