@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="06f870ac-a3a4-47be-81e7-a57437082684" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Day06/patient-app/src/test/java/com/minal/app/PatientIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day06/patient-app/src/test/java/com/minal/app/PatientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day06/patient-app/src/test/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/java-option-stream/docker-compose-mongo.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/java-option-stream/docker/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/src/main/java/com/minal/db/SpringMysqlAppApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/src/main/java/com/minal/db/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/src/main/java/com/minal/db/controller/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/src/main/java/com/minal/db/model/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/src/main/java/com/minal/db/model/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/src/main/java/com/minal/db/repository/MessageDataRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/src/main/java/com/minal/db/repository/UsersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day12/spring-mysql-app/src/test/java/com/minal/db/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose-mongo.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mongo/app/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mongo/app/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mongo/app/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mongo/app/repository/StudentRespository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day06/patient-app/src/main/java/com/minal/app/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day06/patient-app/src/main/java/com/minal/app/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day07/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day07/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day07/patient-app/src/main/java/com/minal/app/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day07/patient-app/src/main/java/com/minal/app/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day11/java-option-stream/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day11/java-option-stream/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day11/java-option-stream/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day11/java-option-stream/target/maven-archiver/pom.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2L7kLmwpFfDBwTmnsYr6BDDwVVj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/cygwin64/home/sfjbs/training/minal/Day11/java-option-stream"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mongo.app.repository" />
+      <recent name="com.mongo.app.model" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06f870ac-a3a4-47be-81e7-a57437082684" name="Changes" comment="" />
+      <created>1675229455971</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675229455971</updated>
+    </task>
+    <servers />
+  </component>
+</project>
