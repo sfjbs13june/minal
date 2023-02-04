@@ -4,12 +4,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.minal.app.controller.PatientController;
 import com.minal.app.model.Patient;
 import com.minal.app.service.PatientService;
-
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -23,15 +21,15 @@ import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.util.Base64Utils;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(PatientController.class)
+@WebMvcTest({PatientController.class})
 @ActiveProfiles(value = "test")
-public class PatientControllerIntegrationTest {
-
+public class PatientIntegrationTest
+{
     @InjectMocks
     PatientController patientController;
 
@@ -51,7 +49,7 @@ public class PatientControllerIntegrationTest {
     public void testSaveStudentPost() throws Exception
     {
         String secret = "Basic " + Base64Utils.encodeToString(("user123"+":"+"password").getBytes());
-        Patient patient=new Patient("pat01","pat_test","25","Female","fever");
+        Patient patient=new Patient("pat01","pat_test","30","Male","fever");
         ResultActions responseEntity  = mockMvc.perform(post(posturl).header(HttpHeaders.AUTHORIZATION, secret).contentType(MediaType.APPLICATION_JSON).content(asObjectToJsonString(patient)).accept(MediaType.APPLICATION_JSON));
         responseEntity.andExpect(status().isOk());
         String result = responseEntity.andReturn().getResponse().getContentAsString();
@@ -61,8 +59,8 @@ public class PatientControllerIntegrationTest {
 
         assertEquals(patientResult.getId(),"pat01");
         assertEquals(patientResult.getName(),"pat_test");
-        assertEquals(patientResult.getAge(),"25");
-        assertEquals(patientResult.getGender(),"Female");
+        assertEquals(patientResult.getAge(),"30");
+        assertEquals(patientResult.getGender(),"Male");
         assertEquals(patientResult.getDisease(),"fever");
     }
 
