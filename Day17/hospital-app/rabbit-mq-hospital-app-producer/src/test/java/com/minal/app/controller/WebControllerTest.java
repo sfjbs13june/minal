@@ -26,8 +26,8 @@ public class WebControllerTest {
   public void producerTest() {
     doNothing().when(rabbitMQSender).send(any(Hospital.class));
     doNothing().when(rabbitMQSender).sendP(any(Patient.class));
-    String result=webController.producer("rohit","223","bhilwara");
-    String result1=webController.producerP("rohit","123","23","M","fever");
+    String result=webController.producer("joey","123","pune");
+    String result1=webController.producerP("rachel","234","234","F","fever");
     System.out.println(result);
     System.out.println(result1);
   }
