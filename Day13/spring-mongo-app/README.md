@@ -28,13 +28,13 @@ curl -X GET http://localhost:8083/customer/read
 ## Put
 
 ``` 
-curl -X PUT 'http://localhost:8083/customer/update?custId=1re07&name=Rama' 
+curl -X PUT 'http://localhost:8083/customer/update?custId=1re07&name=Rachel' 
 ```
 
 ##Delete
 
 ```
-curl -X DELETE 'http://localhost:8083/customer/delete?name=Rama' 
+curl -X DELETE 'http://localhost:8083/customer/delete?name=Rachel' 
 ```
 
 

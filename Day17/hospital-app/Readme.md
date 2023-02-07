@@ -9,10 +9,10 @@ docker-compose -f docker-compose-rabbitmq.yml up -d
 rabbitmq-demo-producer> mvn spring-boot:run
 
 # Test
-curl --location --request GET 'http://localhost:8080/rabbitmq/producer?empName=employee1&empId=id1'
+curl --location --request GET 'http://localhost:8080/rabbitmq/producer?empName=joey&id=123'
 
 
-rabbitmq-demo-consumer> mvn spring-boot:run
+rabbit-mq-hospital-app-consumer> mvn spring-boot:run
 
 #Show data on browser::
 

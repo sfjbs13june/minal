@@ -4,10 +4,14 @@ import com.minal.app.PatientAppApplication;
 import com.minal.app.model.Patient;
 import com.minal.app.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class PatientController {
+public class    PatientController {
+
+    @Value("${app.name}")
+    String name;
 
     @Autowired
     PatientService patientService;
@@ -15,6 +19,7 @@ public class PatientController {
     @PostMapping("/patient/save")
     public Patient savePatient(@RequestBody Patient patient)
     {
+        System.out.println(name);
         System.out.println(patient);
         return patient;
     }
