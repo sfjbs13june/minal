@@ -1,9 +1,8 @@
 # Build
 mvn clean install
 
-# Run Reciever
+# Run Receiver
 mvn spring-boot:run
-
 
 # Run Caller
 
