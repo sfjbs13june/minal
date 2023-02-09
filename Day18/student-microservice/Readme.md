@@ -1,22 +1,22 @@
-# Create project
+# Create project:
 
 ``` 
 https://start.spring.io/
 ```
 
-# Build the project
+# Build the project:
 
 ``` 
 mvn clean install
 ```
 
-# Run application
+# Run application:
 
 ``` 
 mvn spring-boot:run
 ```
 
-# Testing the application
+# Testing the application:
 Save Data:
 
 curl -X 'POST' \
