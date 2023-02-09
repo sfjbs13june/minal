@@ -10,18 +10,18 @@ import java.util.List;
 @RestController
 @RequestMapping("/patient")
 public class PatientController {
-
     @Autowired
     AppointmentRepository appointmentRepository;
-    @RequestMapping("/myappointment")
-    public Appointment getMyAppointments(@RequestParam("patientName") String patientName)
-    {
 
+    @GetMapping("/myappointment")
+    public List<Appointment> getMyAppointments(@RequestParam ("patientName") String patientName){
+
+        return appointmentRepository.findByPatientName(patientName);
     }
 
-    @RequestMapping("/save")
-    public Appointment saveAppointment(@RequestBody Appointment appointment)
-    {
-
+    @PostMapping("/saveappointment")
+    public Appointment saveAppointment(@RequestBody Appointment appointment){
+        appointment = appointmentRepository.save(appointment);
+        return appointment;
     }
 }
