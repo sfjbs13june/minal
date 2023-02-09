@@ -1,8 +1,8 @@
 # Project
-This Apllication is use understand the basic security mechanism in sprict boot application.
+This Application is use understand the basic security mechanism in spring boot application.
 
 ## Import project
-Import the project on either eclipse or inellij as a maven import project
+Import the project on either eclipse or intellij as a maven import project
 
 ## Building
 
