@@ -15,7 +15,7 @@ public class PrescriptionController {
     PrescriptionRepository prescriptionRepository;
 
     @GetMapping(value = "/viewprescription")
-    public List<Prescription> getAllPrescriptions(String patientName) {
+    public List<Prescription> getAllPrescriptions() {
 
             return prescriptionRepository.findAll();
     }

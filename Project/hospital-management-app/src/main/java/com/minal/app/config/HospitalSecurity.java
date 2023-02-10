@@ -10,25 +10,25 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 
 @Configuration
-@EnableWebSecurity
 public class HospitalSecurity extends WebSecurityConfigurerAdapter{
 
 
     @Override
     protected void configure(HttpSecurity http) throws Exception{
         http.httpBasic().and().authorizeRequests()
-                .antMatchers(HttpMethod.GET, "/doctor/doctorappointment").hasAnyRole("USER")
-                .antMatchers(HttpMethod.POST, "/doctor/savedocappointment").hasAnyRole("USER")
-                .antMatchers(HttpMethod.GET, "/patient/myappointment").hasAnyRole("USER")
-                .antMatchers(HttpMethod.POST, "/patient/saveappointment").hasAnyRole("USER")
-                .antMatchers(HttpMethod.GET, "/Prescription/viewprescription").hasAnyRole("USER")
-                .antMatchers(HttpMethod.POST, "/Prescription/saveprescription").hasAnyRole("USER")
+                .antMatchers("/swagger-ui/indecx.html").hasAnyRole("DOC1","PATIENT123")
+                .antMatchers(HttpMethod.GET, "/doctor/doctorappointment").hasAnyRole("DOC1")
+                .antMatchers(HttpMethod.POST, "/doctor/savedocappointment").hasAnyRole("DOC1")
+                .antMatchers(HttpMethod.GET, "/patient/myappointment").hasAnyRole("PATIENT123")
+                .antMatchers(HttpMethod.POST, "/patient/savepatientappointment").hasAnyRole("PATIENT123")
+                .antMatchers(HttpMethod.GET, "/Prescription/viewprescription").hasAnyRole("PATIENT123","DOC1")
+                .antMatchers(HttpMethod.POST, "/Prescription/saveprescription").hasAnyRole("PATIENT123","DOC1")
                 .and().csrf().disable().headers()
                 .frameOptions().disable();
     }
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication().withUser("name123").password("{noop}password").roles("USER");
+        auth.inMemoryAuthentication().withUser("doc1").password("{noop}password").roles("DOC1").and().withUser("pat1").password("{noop}password").roles("PATIENT123");
     }
 }

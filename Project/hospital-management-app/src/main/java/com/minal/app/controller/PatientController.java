@@ -19,7 +19,7 @@ public class PatientController {
         return appointmentRepository.findByPatientName(patientName);
     }
 
-    @PostMapping("/saveappointment")
+    @PostMapping("/savepatientappointment")
     public Appointment saveAppointment(@RequestBody Appointment appointment){
         appointment = appointmentRepository.save(appointment);
         return appointment;

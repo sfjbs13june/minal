@@ -1,5 +1,8 @@
 package com.minal.app.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Prescription {
 
     String prescriptionId;
@@ -7,6 +10,10 @@ public class Prescription {
     String description;
     String patientName;
     String doctorName;
+
+    public Prescription(){
+
+    }
 
     public Prescription(String prescriptionId, String appointmentId, String description, String patientName, String doctorName) {
         this.prescriptionId = prescriptionId;
