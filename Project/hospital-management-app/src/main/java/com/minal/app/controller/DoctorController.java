@@ -17,15 +17,13 @@ public class DoctorController {
 
 //    Prescription pre;
 
-    @GetMapping("/doctorappointment")
-
+    @RequestMapping(value = "/doctorappointment",method = RequestMethod.GET)
     public List<Appointment> getAppointments(@RequestParam ("doctorName") String doctorName){
 
         return appointmentRepository.findByDoctorName(doctorName);
     }
-    @PostMapping("/savedocappointment")
+    @RequestMapping(value = "/savedocappointment",method = RequestMethod.POST)
     public Appointment saveAppointment(@RequestBody Appointment appointment){
-
         appointment = appointmentRepository.save(appointment);
         return appointment;
     }
